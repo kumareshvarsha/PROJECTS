@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* header part */
+header{
+    background-color: rgb(12, 143, 231);
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 87px;
+    padding: 0 24px;
+    margin: 0 24px;
+}
+nav ul{
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 33vw;
+    height: 26px;
+    margin: 0 25px 0 80px;
+    text-align: center;
+    font-weight: bolder;
+}
+.btn{
+    padding: 5px 10px;
+    background-color: rgb(12, 143, 231);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover{
+    font-weight: bolder;
+}
+/* main part */
+.container{
+    min-height: calc(100vh - 10vh - 12vh);
+}
+.slider{
+    margin: 12px auto;
+    width: 80vw;
+    overflow: hidden;
+}
+.card{
+    max-width: 90vw;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.cards{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 5px;
+}
+.center{
+    text-align: center;
+}
+.card-item img{
+    width: 170px;
+    height: 170px;
+}
+.my-1{
+    margin: 5px 0;
+}
+.my-2{
+    margin: 26px 0;
+}
+
+/* footer part */
+.text-center{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color:rgb(12, 143, 231);
+    color: white;
+    height: 12vh;
+}
+/* responsive part */
+@media screen and (max-width:1000px){
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        justify-content: center;
+        margin: 12px 0;
+    }
+    .slider{
+        height: 30vh;
+    }
+    nav ul{
+        justify-content: center;
+        height: 34px;
+    }
+    .search{
+        justify-content: center;
+    }
+    .search input {
+        margin: 12px 16px;
+    }
+    
+}
